@@ -11,7 +11,6 @@
     data () {
       return {
         showinput: true,
-        input: '',
         checkclass: '',
         regList: {
           ImgCode: /^[0-9a-zA-Z]{4}$/,
@@ -37,7 +36,7 @@
         }
       }
     },
-    props: ['placeholder', 'type', 'typename', 'changeshow', 'inputtext'],
+    props: ['placeholder', 'type', 'typename', 'changeshow', 'inputtext', 'input'],
     methods: {
       checkinput: function () {
         if (!this.regList[this.type].test(this.input)) {
